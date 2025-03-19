@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>crear un nuevo post</h2>
+
+    <form id="postForm">
+        <label for="title"></label>
+        <!--input es el encargado de recibir el texto o datos que el usuario quiera ingresar-->
+        <input type="text" id="title" name="title">
+
+        <label for="body">Contenido:</label>
+        <input type="text" id="body" name="body" /> 
+
+        <button type="submit">Enviar</button> 
+
+    </form>
+
+    <h3>Respuestas:</h3>
+    <pre id="responde"></pre>
+
+    <!--Internamente procesa javascript, podemos dentro de esas etiquetas de apertura 
+    y cierre meter codigo javascript-->
+    <cript>
+        document.getElementById('postForm').addEventListener('submit', async function (event){
+            event.preventDefault(); //evita que la pagina sea recargada
+            let nuevoPost = {
+                tittle: Document.getElementById(title),value,            }
+        })
+    </cript>
+
+</body>
+</html>

@@ -1,3 +1,21 @@
 .contenedor{
+    color: black;
     background-color: rgb(31, 31, 31);
+    width: 600px; 
+    height: 240px;
+    display: flex;
+    justify-content: center
+    align-items: flex-start
+}
+
+.cuadroDerecho{
+    color: black;
+    background-color: rgb(70, 70, 70);
+    width: 345px; /*ancho*/
+    height: 205px; /*alto*/
+}
+
+img{
+    width: 215px;
+    height: 205px; 
 }
