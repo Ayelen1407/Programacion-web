@@ -1,0 +1,40 @@
+.block 
+{
+    display: block;
+    width: 60px; /*ancho*/
+    background-color: rgb(245, 168, 81);
+    padding: 40px;/*del elemento al borde*/
+    margin: 10px 0;
+}
+
+.inline 
+{
+    display: inline;
+    background-color: brown;
+    padding: 20px;
+    margin: 5px;
+}
+
+.inline-block
+{
+    background-color: rgb(145, 195, 238);
+    padding: 20px;
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+}
+
+.flex-item
+{
+    background-color: aqua;
+    padding: 20px;
+    margin: 5px;
+}
+
+.flex-container
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(90, 131, 185);
+    padding: 10px;
+}
