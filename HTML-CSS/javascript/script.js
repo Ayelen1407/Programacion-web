@@ -1,7 +1,7 @@
 var miVariable = 'contenido de la variable'; //Esta no se usa
 
 //let --> solamente vive en el scope declarando o en sus hijos
-let miVariable2 = 'puedenser re-escritos sus valores';
+let miVariable2 = 'pueden ser re-escritos sus valores';
 miVariable = 9; //reasignación del valor
 
 //const --> variable constante, no son reasignables los valoeres
@@ -76,7 +76,48 @@ const miObjeto =
 };
 console.log(miObjeto.nombre); //en este caso devuelve "Ayelen"
 
+/* METODOS DE ARREGLOS */
+//length --> longitud de arreglos
+const longitud = miArreglo.length;
+console.log(longitud);
+
+//push(valor) --> Agrega un elemento al final (equivalente al append() en python)
+miArreglo.push('Manzana')
+console.log("cadena", miArreglo)
+
+//pop() elimina el ultimo elemento de un arreglo
+//si queremos lo podemos guardar en una variable
+const ultimo = miArreglo.pop();
+console.log("ultimo", ultimo);
+
+//shift() elimina el primer valor de un arreglo, también lo guarda
+const primero = miArreglo.shift();
+console.log(primero);
+
+//unshift(valor) --> Agrega un elemento al principio del arreglo
+miArreglo.unshift("Belen");
+console.log(miArreglo);
+
 /* ITERAMOS UNA LISTA CON FOR */
 for(let i=0; i < miArreglo.length; i++){
     console.log(miArreglo[i]); // imprimi en pantalla el arreglo con su posicion
 }
+
+/*  forEach */
+//SOLO RECORRE, no guarda los valores en ningun lado
+miArreglo.forEach((item, index, miArregloEntero) => {  //lo que marca el arranque de la funcion son los parentesis mas grandes
+    console.log('index', index, 'elemento', item, 'Arreglo Completo', miArregloEntero);
+});
+
+// map --> Recorre el arreglo. lo modifica con una funcion y nos devuelve uno nuevo
+const nuevoArreglo = miArreglo.map((item, index) => {
+    const num = 2;
+    console.log(index, "item", item);//
+    return (item += num);
+})
+console.log("nuevo arreglo", nuevoArreglo);
+
+//filter --> Crea un nuevo array a partir de los elementos que cumplan las condiciones
+const arregloNum = [2,4,5,6];
+const pares = arregloNum.filter((item) => item % 2 === 0);
+console.log(pares);
