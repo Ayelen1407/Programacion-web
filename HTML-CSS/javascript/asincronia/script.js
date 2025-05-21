@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
 //fetch
 fetch('https://rickandmortyapi.com/api/character')
     .then((data) => data.json())
-    .then((response) => console.log("response", response.results)); //ponemos corchetes para traer array en especifico
+    .then((response) => console.log("response", response.results)); //ponemos corchetes para traer un array en especifico
 
 //async await
 //funcion flecha asincrona
