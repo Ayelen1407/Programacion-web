@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
 //fetch
 fetch('https://rickandmortyapi.com/api/character')
     .then((data) => data.json())
-    .then((response) => console.log("response", response.results[2]));
+    .then((response) => console.log("response", response.results)); //ponemos corchetes para traer array en especifico
 
 //async await
 //funcion flecha asincrona
@@ -41,4 +41,4 @@ const asyncFunction = async () => {
 };
 asyncFunction(); //para ejecutar una funcion, tenemos que llamarla. Poner parentesis y ; al final
 // funcion regular asincrona
-async function asyncFunc() {};
+async function asyncFunc() {}; //una manera mas corta de hacerlo
