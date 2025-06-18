@@ -1,0 +1,20 @@
+-Los archivos ahora tienen la extencion "jsx"
+-Los componentes cuando se declaran siempre arrancan con mayúscula y siempre retornan estetita
+(interfaz/algo visible) como una tabla
+-"<></>" son buenos porque no impactan en el SEO
+-Todo la informacion interna del proyecto está en el "package.json" (es uno de los archivos más importantes)
+    -"Dependencies" son utilidades o funcionaliadades que nosotros instalamos para desarrollar la página. ej. instalar un carrusel
+    -"devDependecies" nos ayuda a nosotros como desarrolladores. ej.eslint(te marca errores)
+-El archivo "index.html" no se modifica. No se toca
+-El archivo "main.jsx" no se modifica. No se toca(es raro que tenga contenido). Conecta con el archivo html
+    -El codigo, o sea, el css mas generico/global se importa en "main.jsx"
+-El archivo "eslint.config.js" se encarga de darnos los errores
+-El archivo ".gitignore" le indica a Git se archivos debe ignorar
+-El archivo "App.jsx"
+-Hay dos tipos de export:
+    export no nombrado o default: nos permite renombrar (que no tenga llaves lo hace mas flexible)
+    export nombrado o común: Es mas recomendable (lleva llaves)
+-Los "Props" son valores que le podemos pasar a componentes para que lo tomen y los usen para que este
+componente realice una acción
+-Los "Hooks" SIEMPRE arrancan con la palabra "use" en minúscula
+-useState es para guardar datos en una variable, y tiene una funcion actualizadora
