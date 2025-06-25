@@ -18,3 +18,7 @@
 componente realice una acción
 -Los "Hooks" SIEMPRE arrancan con la palabra "use" en minúscula
 -useState es para guardar datos en una variable, y tiene una funcion actualizadora
+-El nombre del evento cuando se hace un boton siempre se llamara "handleClick"
+cuando pasamos una funcion a un boton solo se pasa la funcion, no la ejecucion?
+- El codigo para capturar un evento del input por lo generar es siempre igual
+    {nombre === "" ? <>hola</> : <>chau</>} --> es como un if y else
