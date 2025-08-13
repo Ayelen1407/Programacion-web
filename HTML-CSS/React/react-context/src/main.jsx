@@ -3,12 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-export const NombreContext = React.createContext(); //agregue
-
 createRoot(document.getElementById('root')).render(
-  <NombreContext.Provider value={"Aye"}>
-    <StrictMode>
-      <App />
-    </StrictMode>,
-  </NombreContext.Provider>
+  <StrictMode>
+    <App />
+  </StrictMode>,
 )

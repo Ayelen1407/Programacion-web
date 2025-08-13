@@ -1,2 +1,3 @@
 # Programacion-web
-npm run dev
+npm i --> para instalar
+npm run dev --> para correr 
