@@ -11,4 +11,21 @@ function agregarTarea() {
 
 function borrar(elemento) {
     elemento.parentElement.remove();
+
+}
+function finalizarTarea() {
+    const email = document.getElementById("email");
+    const nombre = document.getElementById("nombre")
+    const finalizar = document.getElementById("finalizar");
+
+    finalizar.addEventListener ("click", () => {
+        const valorEmail = email.value;
+        const valorNombre = nombre.value;
+
+        const cajaFinal = document.createElement("li");
+        cajaFinal.innerHTML = `
+        Valores adjuntos:  nombre: ${valorNombre}  email: ${valorEmail}`
+        ;
+        document.getElementById("caja").appendChild(cajaFinal);
+    })
 }
